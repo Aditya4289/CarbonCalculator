@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Energy Efficiency Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Healthcare Energy Efficiency Calculator</h1>
+    <form id="energy-form">
+        <label for="lighting">Lighting (kWh per month):</label>
+        <input type="number" id="lighting" name="lighting" required><br>
+        
+        <label for="heating">Heating (kWh per month):</label>
+        <input type="number" id="heating" name="heating" required><br>
+        
+        <label for="medical-equipment">Medical Equipment (kWh per month):</label>
+        <input type="number" id="medical-equipment" name="medical-equipment" required><br>
+        
+        <label for="others">Other Energy Consumption (kWh per month):</label>
+        <input type="number" id="others" name="others"><br>
+        
+        <button type="button" onclick="calculateEnergyEfficiency()">Calculate</button>
+    </form>
+    
+    <div id="results">
+        <h2>Recommendations</h2>
+        <p id="total-consumption"></p>
+        <ul id="recommendations"></ul>
+    </div>
+    
+    <a href="index1.html" class="back-button">Carbon Footprint Calculator</a>
+
+    <footer>
+        <div class="container">
+            <div>
+                <p>Made with ❤️ by Team Bajrangi Bytes</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h3>Calculate Your Daily Carbon Emissions</h3>
+            <form id="carbonForm">
+                <label for="transport">Daily Transportation (km):</label>
+                <input type="number" id="transport" name="transport" placeholder="e.g., 20" required>
+                <label for="electricity">Electricity Consumption (kWh):</label>
+                <input type="number" id="electricity" name="electricity" placeholder="e.g., 15" required>
+                <label for="diet">Dietary Choices:</label>
+                <select id="diet" name="diet" required>
+                    <option value="low">Low Carbon (Vegetarian/Vegan)</option>
+                    <option value="medium">Medium Carbon (Mixed Diet)</option>
+                    <option value="high">High Carbon (Meat-heavy Diet)</option>
+                </select>
+                <button type="button" id="calculateButton">Calculate</button>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button">Healthcare Energy Efficiency Calculator</a>
+    <footer>
+        <div class="container1">
+            <div>
+                <p>Made with ❤️ by Team Bajrangi Bytes</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
